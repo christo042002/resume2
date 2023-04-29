@@ -1,0 +1,358 @@
+/*navbar*/
+.navbar a:hover{
+    background-color: rgb(177, 68, 68);
+    box-shadow: 0px 0px 5px red;
+    transition: .4s ease-in;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+.container .card img{
+    border: none;
+    filter: brightness(80%);
+   
+}
+.card-img-overlay{
+    text-transform: capitalize;
+    font-size: 50px;
+    padding-right: 130px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 80px;
+}
+span{
+    color: rgb(53, 53, 51);
+    font-weight: 500;
+    text-decoration: underline;
+    
+}
+
+/*brands*/
+.brands .card{
+    background: transparent;
+    height: 200px;
+    border: none;
+}
+.brands .card img{
+    background: transparent;
+    height: 120px;
+    width: 160px;
+    align-items: center;
+    filter: brightness(100%);
+    margin-left: 55px;
+    transition: 1s;
+}
+.brands{
+    
+    background-color: rgb(243, 245, 246);
+    height: 133px;
+    padding: 5px 0;
+    filter: brightness(100%);
+    
+ 
+}
+.brands .card img:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+/*hover*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.hover{
+    position: relative;left: 40px;
+    width: 1200px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hover:hover{
+    width: 800px;
+    transition-delay: 0s;
+}
+.hover.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover .circle h2{
+    color: aliceblue;
+    margin-bottom: 250px;
+    position: relative;left: 200px;
+
+}
+.hover:hover .circle h2{
+    opacity: 0;
+
+}
+.hover .circle::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    clip-path: circle(100px at center);
+}
+.hover:hover .circle::before
+{
+    clip-path: circle(400px at center);
+}
+
+.hover .circle .logo{
+    position: relative;top: 120px;left: 480px;
+    width: 400px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+}
+.hover:hover .circle .logo{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+.content{
+    position: relative;
+    width: 70%;
+    left: 2%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+
+}
+
+.hover:hover .content{
+    left: -10%;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.content h2{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.content p{
+    color: aliceblue;
+}
+.content a {
+    position: relative;
+    color: black;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+}
+.hover .product_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-10%) scale(0);
+    height: 150px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.hover:hover .product_img{
+    left: 72%;
+    transform: translate(-200%,-50%) scale(1);
+    transition-delay: 0.5s;
+}
+
+
+/*gamesweoffer*/
+.gamesweoffer .card{
+    background-image: linear-gradient(135deg, #434343 10%, #000000 100%);
+    border: none;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.gamesweoffer span{
+    color: orange;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+}
+.gamesweoffer i{
+    margin-left: 10px;
+}
+
+/*live*/
+.video h1{
+    text-align: center;
+    color: orange;
+    text-decoration: underline;
+}
+.video iframe{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,1%);
+}
+
+/*news*/
+.news{
+    background-color: white;
+}
+.news h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(6, 6, 6);
+}
+.news p{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(14, 15, 15);
+    
+}
+.news .card{
+    border: none;
+    background: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media screen and (max-width:1200px) {
+    .container .card img{
+        border: none;
+        height: 220px;
+    }
+    .container .card{
+        border: none;
+      
+    }
+    .card-img-overlay{
+        text-transform: capitalize;
+        font-size: 30px;
+        padding-right: 130px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-top: 60px;
+    }
+    button{
+        font-size: 12px;
+    }
+    /*brands*/
+    .brands .card{
+        background: transparent;
+        height: 200px;
+    }
+    .brands .card img{
+        background: transparent;
+        height: 80px;
+        width: 90px;
+        margin-left: -6px;
+    }
+    .brands{
+    
+        background-color: rgb(243, 245, 246);
+        height: 80px; 
+    }
+    .text h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /*live*/
+    .video iframe{
+        position: relative;
+        top: 190%;
+        left: 50%;
+        transform: translate(-50%,1%);
+        width: 400px;
+    }
+   
+
+   
+
+}
+
+@media (max-width:991px)
+{
+    .hover{
+        width:auto;
+        max-width: 350px;
+        align-items: flex-start;
+
+    }
+    .hover:hover{
+        height: 300px;
+    }
+    .hover:hover .product_img{
+        top: initial;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(10%,30%) scale(1);
+        height: 120px;
+    }
+    .hover:hover .content{
+        position: absolute;left:1% ;
+        padding: 7px 20px;
+    }
+    .hover .circle .logo{
+        position: relative;top:-10px;left: -20px;
+        width: 400px;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+    }
+    .hover .circle h2{
+        color: aliceblue;
+        margin-bottom: 250px;
+        position: relative;bottom: 100px;left: 0px;
+    
+    }
+    .hover:hover .circle h2{
+        opacity: 0;
+    
+    }
+    .hover{
+        position: relative;left: 0px;
+    }
+    
+   
+  
+}
+/*custom scroll bar*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%);
+    border-radius:0px;
+}
